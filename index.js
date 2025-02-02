@@ -18,7 +18,6 @@ app.use(express.urlencoded({extended : true}))
 app.use('/api/v1/category', categoryRoute)
 app.use('/api/v1/product', productRoute)
 
-const port = process.env.PORT
 app.listen(port, async () => {
     try {        
         console.log(`Server running at port:${port}`)   
